@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 12px;
+	background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+	background-color: #fff;
+	width: 60%;
+	display: flex;
+	padding: 2rem 1rem;
+	border-radius: 1.3rem;
+}
+.accordion {
+	padding: 1.5rem;
+	padding-left: 3.5rem;
+}
+h1 {
+	font-size: 2.3em;
+	padding-left: 0.3rem;
+}
+
+.buttons {
+	cursor: pointer;
+}
+
+.buttons:hover {
+	color: rgb(199, 45, 45);
+	/* background-color: rgb(199, 45, 45); */
+}
+
+.buttons.active {
+	/* color: rgb(41, 39, 39); */
+	color: #fff;
+	background-color: rgb(199, 45, 45);
+	font-weight: 600;
+}
+
+.menus {
+	margin: 1.5rem 0;
+	color: hsl(237, 12%, 33%);
+	/* width: 100%; */
+}
+img {
+	margin-left: -5rem;
+}
+.buttons,
+p {
+	font-size: 1.2em;
+	margin: 1rem 0;
+	padding: 0.5rem;
+}
+
+.image {
+	position: relative;
+}
+
+.box {
+	position: absolute;
+	top: 8rem;
+	left: -2rem;
+}
+
+p {
+	display: none;
+}
+
+p.active {
+	display: block;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+	.container {
+		margin-top: 5rem;
+		width: 90%;
+		flex-direction: column;
+	}
+	img {
+		/* margin: auto; */
+		margin-left: 5rem;
+		width: 70%;
+	}
+	.image .box {
+		width: 8rem;
+		top: 7rem;
+		left: 0;
+	}
+	h1 {
+		text-align: center;
+		margin: 2rem 0;
+	}
+
+	.accordion {
+		padding: 1.5rem;
+	}
+}
