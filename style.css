@@ -39,7 +39,6 @@ h1 {
 }
 
 .buttons.active {
-	/* color: rgb(41, 39, 39); */
 	color: #fff;
 	background-color: rgb(199, 45, 45);
 	font-weight: 600;
@@ -48,7 +47,6 @@ h1 {
 .menus {
 	margin: 1.5rem 0;
 	color: hsl(237, 12%, 33%);
-	/* width: 100%; */
 }
 img {
 	margin-left: -5rem;
@@ -78,14 +76,13 @@ p.active {
 	display: block;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 600px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
 	.container {
 		margin-top: 5rem;
 		width: 90%;
 		flex-direction: column;
 	}
 	img {
-		/* margin: auto; */
 		margin-left: 5rem;
 		width: 70%;
 	}
